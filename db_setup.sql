@@ -4,12 +4,6 @@ This SQL script creates a schema for matches, players, teams, coaches and venues
 
 Due to the size of the file, it is best to upload half of it at a time.
 
-Questions:
-1) Remove ''index' INTEGER' from each table?
-2) Include previous match in matches table
-3) Include additional rows for matches table - esp results
-4) Check data types, esp for date
-
 */
 
 -- Table Setup
