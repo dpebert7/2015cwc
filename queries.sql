@@ -2,7 +2,7 @@
  Example SQL queries for the 2015 Cricket World Cup database:
 */
 
-"""
+
 -- Check number of rows from each table:
 SELECT COUNT(*) from grounds;
 SELECT COUNT(*) from matches;
@@ -132,4 +132,4 @@ second.team_2_id as 'next_match_team_2'
 FROM matches first
 JOIN matches second
 ON (first.team_2_next_match = second.match_id)
-"""
+
