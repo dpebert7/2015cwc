@@ -1,12 +1,10 @@
-## 2015cwc
-Database of the 2015 Cricket World Cup
+# 2015cwc
 
-Created 29 November 2016 for Data Warehousing Class Project implementing a database in [Oracle Live SQL](https://livesql.oracle.com).
+An Oracle database consisting of matches, teams, players, officials, and grounds from the 2015 Cricket World Cup. Data were collected from ESPNcricinfo with the help of [python-espncricinfo](https://github.com/dwillis/python-espncricinfo) and then reformatted for [Oracle Live SQL](https://livesql.oracle.com). Created Fall 2016 for data warehousing class project at Tarleton State University.
 
-#### Files
-
-- `cricket_database.py`: Python code for collecting 2015 world cup data from ESPNcricinfo
-- `db_setup.sql`: SQL code for creating database (works perfectly in [Oracle Live SQL](https://livesql.oracle.com))
-- `erd.png`: Database entity relationship diagram.
+### Files
+- `erd.png`: Database entity relationship diagram
+- `db_setup.sql`: SQL code for creating database (works perfectly in Oracle Live SQL)
+- `queries.sql`: Sample queries that run in the database (again, especially for Oracle Live SQL)
 - `espnbeamer.pdf`: Class presentation
-- `queries.sql`: Sample queries that run in the database (again, especially for [Oracle Live SQL](https://livesql.oracle.com))
+- `cricket_database.py`: Python code for collecting 2015 world cup data from ESPNcricinfo
