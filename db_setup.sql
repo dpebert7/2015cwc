@@ -71,6 +71,8 @@ CREATE TABLE players (
   player_name VARCHAR(50),
   player_primary_role VARCHAR(25),
   team_id INTEGER
+  	CONSTRAINT check_team_id
+  	CHECK (team_id BETWEEN 0 and 50)
 );
 
 DROP TABLE teams;
@@ -193,8 +195,8 @@ INSERT INTO teams VALUES(6,40,'AFG');
 
 
 
-
-
+INSERT INTO players VALUES(99999,TO_DATE ('1989-05-04','YYYY-MM-DD'),'99999','David Ebert','total fraud','62'); 
+	-- The above fake row is included test the check constraint on team_id for players table
 INSERT INTO players VALUES(0,TO_DATE ('1986-9-30','YYYY-MM-DD'),'48927','Martin Guptill','opening batsman','5');
 INSERT INTO players VALUES(1,TO_DATE ('1986-10-27','YYYY-MM-DD'),'48739','David Warner','opening batsman','2');
 INSERT INTO players VALUES(2,TO_DATE ('1992-12-17','YYYY-MM-DD'),'58406','Quinton de Kock','wicketkeeper batsman','3');
